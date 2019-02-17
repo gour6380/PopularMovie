@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFragment"
+    android:id="@+id/fragment_main">
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_dark"
+        android:id="@+id/gridView_tiles"
+        android:gravity="center"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="0dp"
+        android:horizontalSpacing="0dp"
+        style="@style/posterGridStyle"/>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:contentDescription="@string/image_poster"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageView_empty_grid"
+        android:background="@drawable/ic_airline_seat_flat_angled_black_24dp"
+        android:visibility="gone" />
+</RelativeLayout>
+
